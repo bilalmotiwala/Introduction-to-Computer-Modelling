@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -15,6 +16,7 @@ int main()
 
     int mainmenu_choice = 0;
     int menu_choice = 0;
+    int precision;
 
     while ((mainmenu_choice == 0 && menu_choice == 0) || (mainmenu_choice == 0 && menu_choice == 1))
     {
@@ -31,6 +33,10 @@ int main()
 
         cout << "Please Enter the Value for C: ";
         cin >> c;
+        cout << endl;
+
+        cout << "Please set the precision of the required output.";
+        cin >> precision;
         cout << endl;
 
         cout << "-----------------------------------------------" << endl;
@@ -60,7 +66,7 @@ int main()
             x1 = -(c / b);
 
             cout << endl;
-            cout << "The Solution to this equation is at root: " << x1 << endl;
+            cout << setprecision(precision) << "The Solution to this equation is at root: " << x1 << endl;
             cout << endl;
 
             cout << "Enter 1 to re-enter the equation or anyother number to exit." << endl;
@@ -84,7 +90,7 @@ int main()
             x1 = -b + sqrt(x2);
 
             cout << endl;
-            cout << "The Solution to this equation is at root: " << x1 << endl;
+            cout << setprecision(precision) << "The Solution to this equation is at root: " << x1 << endl;
 
             cout << endl;
 
