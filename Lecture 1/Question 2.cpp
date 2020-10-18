@@ -94,7 +94,7 @@ int main()
 
             cout << endl;
 
-            cout << "Enter 1 to re-enter the equation or anyother number to exit." << endl;
+            cout << "Enter 1 to Restart or anyother number to exit." << endl;
             cin >> menu_choice;
 
             if (menu_choice == 1)
@@ -116,7 +116,7 @@ int main()
 
             cout << endl;
 
-            cout << "Enter 1 to re-enter the equation or anyother number to exit." << endl;
+            cout << "Enter 1 to Restart or anyother number to exit." << endl;
             cin >> menu_choice;
 
             if (menu_choice == 1)
