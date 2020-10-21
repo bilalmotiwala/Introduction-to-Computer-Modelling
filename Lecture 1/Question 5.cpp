@@ -42,7 +42,7 @@ int main()
         cout << "The Bulb is connected to Switch A as this bulb is ON." << endl;
     }
 
-    else(switch_a == 1 && switch_b == 0 && bulbstate == 0)
+    else if (switch_a == 1 && switch_b == 0 && bulbstate == 0)
     {
         if(bulbtemp == 1)
         {
